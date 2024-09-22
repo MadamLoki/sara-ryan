@@ -1,0 +1,131 @@
+/* brand color palette */
+:root {
+    --primary: rgba(68, 88, 119, 1);
+    --secondary: rgba(146, 204, 206, 1);
+    --tertiary: rgba(49, 52, 61, 0.70);
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgba(238, 238, 247, 1);
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+nav h1 {
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--light);
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--light);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-inline: 30px;
+    padding: 15px;
+}
+
+ul li { 
+    margin: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background: var(--primary);
+    padding: 1%;
+    width:100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.col-1 {
+    width: 10%;
+    border-right: 3px solid var(--primary);
+    padding-right: 1%;
+    margin-right: 2%;
+}
+
+.col-2 {
+    width: 80%;
+    margin-left: 2%;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.contacts ul li a {
+    color: var(--dark);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    margin-inline: 30px;
+}
+
+.project {
+    width: 45%;
+    margin: 1%;
+    padding: 1%;
+    text-align: left;
+    position: relative;
+}
+
+.project h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.project img{
+    width: 60%;
+    height: auto;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.project summary {
+    position: absolute;
+    bottom: 30px;
+    background-color: var(--tertiary);
+    color: var(--light);
+    padding: 1%;
+    text-align: wrap;
+    width: 50%;
+    border-style: 10px solid var(--dark);
+    border-radius: 3px;
+}
+
+footer {
+    background: var(--primary);
+    padding: 1%;
+    width:100%;
+    text-align: center;
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
