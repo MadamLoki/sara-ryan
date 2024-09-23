@@ -4,7 +4,7 @@
     --secondary: rgba(146, 204, 206, 1);
     --tertiary: rgba(49, 52, 61, 0.70);
     --dark: rgba(28, 29, 33, 1);
-    --light: rgba(238, 238, 247, 1);
+    --light: rgb(204, 204, 204);
 }
 
 *{
@@ -16,6 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 nav img {
     width: 50px;
     height: auto;
@@ -50,6 +51,12 @@ ul li a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+ul li a:hover {
+    color: var(--dark); /* Change text color on hover */
+    background-color: var(--primary); /* Optional: Change background color */
+    text-decoration: underline;
+}
+
 header {
     background: var(--primary);
     padding: 1%;
@@ -60,6 +67,8 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .col-1 {
@@ -81,6 +90,30 @@ header {
     
 }
 
+.feature {
+    flex-grow: 2;
+    margin: 20px;
+    padding: 10px;
+}
+.feature img {
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.feature summary {
+    position: absolute;
+    bottom: -200px;
+    background-color: var(--tertiary);
+    color: var(--light);
+    padding: 1%;
+    text-align: left;
+    width: 50%;
+    border-style: 10px solid var(--dark);
+    border-radius: 3px;
+}
+
 .contacts ul li a {
     color: var(--dark);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -94,6 +127,31 @@ header {
     padding: 1%;
     text-align: left;
     position: relative;
+}
+
+.project:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+    border-radius: 5px;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+.project:hover h3 {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+.project:hover img-overlay {
+    display: block;
+}
+
+.overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 47, 255, 0.5); /* Red color with 50% transparency */
+    opacity: 0.5; /* Adjust opacity as needed */
 }
 
 .project h3 {
@@ -114,7 +172,7 @@ header {
     background-color: var(--tertiary);
     color: var(--light);
     padding: 1%;
-    text-align: wrap;
+    text-align: left;
     width: 50%;
     border-style: 10px solid var(--dark);
     border-radius: 3px;
