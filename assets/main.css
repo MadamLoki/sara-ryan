@@ -173,6 +173,7 @@ main {
     flex-basis: calc(50% - 1em);
 }
 
+/* Will need to separate these as images change */
 .project-2, .project-3, .project-4, .project-5 {
     background-image: url("https://i.postimg.cc/MTjVyd2B/creativeproject.png");
     background-repeat: no-repeat;
