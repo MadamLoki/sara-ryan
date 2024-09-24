@@ -15,10 +15,10 @@
 }
 
 body {
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color: var(--primary);
-background-color: var(--light);
-line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
 }
 
 /* Header and Navigation */
@@ -121,20 +121,20 @@ main {
 }
 
 .page-section > h2 {
-flex: 0 0 20%;
-text-align: right;
-padding-right: 15px;
-border-right: 4px solid var(--primary);
-font-size: 4vw;
-line-height: 1.1;
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
 }
 
 .page-section > div {
-flex: 0 0 77%;
+    flex: 0 0 77%;
 }
 
 .page-section p {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /* Portfolio Items */
@@ -169,7 +169,7 @@ margin-bottom: 20px;
 
 /* Projects 2-5 */
 .flex-item:not(.project-1) {
-    min-height: 150px;
+    min-height: 400px;
     flex-basis: calc(50% - 1em);
 }
 
@@ -221,6 +221,15 @@ margin-bottom: 20px;
 }
 
 /* Media Queries */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .flex-item:not(.project-1) {
+        flex-basis: 100%;
+    }
+}
+
+/* Larger screens */
 @media screen and (max-width: 980px) {
     header {
         padding: 0 0 10px 0;
@@ -253,11 +262,4 @@ margin-bottom: 20px;
         font-size: 7vw;
     }
 
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .flex-item:not(.project-1) {
-        flex-basis: 100%;
-    }
 }
