@@ -164,7 +164,7 @@ margin-bottom: 20px;
     min-height: 400px;
     flex-basis: 100%;
     background-image: url("https://i.postimg.cc/tgjN2dTV/rodeopngwebsite.png");
-    
+    background-repeat: no-repeat;
 }
 
 /* Projects 2-5 */
@@ -175,6 +175,7 @@ margin-bottom: 20px;
 
 .project-2, .project-3, .project-4, .project-5 {
     background-image: url("https://i.postimg.cc/MTjVyd2B/creativeproject.png");
+    background-repeat: no-repeat;
 }
 
 .flex-item:hover {
