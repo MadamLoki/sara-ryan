@@ -1,10 +1,10 @@
 /* Brand color palette */
 :root {
-    --primary: #203f6a;
-    --secondary: #468fb9;
-    --tertiary: #31333a;
-    --dark: #1a1a1a;
-    --light: #dadada;
+    --primary: #153d5b;
+    --secondary: #30ccfd;
+    --tertiary: #272727;
+    --dark: #10151e;
+    --light: #e2d9cf;
 }
 
   /* Global Styles */
